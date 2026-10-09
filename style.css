@@ -1,21 +1,17 @@
 * {
     box-sizing: border-box;
+}
+
+html, body { 
     margin: 0;
     padding: 0;
-}
-
-html { 
     background-color:rgb(110, 91, 91);
-}
+    font-family: "Playfair Display", Georgia, serif;
+    /* display: flex; 
+    justify-content: center;
+    align-items: center; */
 
-h1, h2, h3 {
-    color: #ffffff;
-    
 }
-p {
-    color: lch(89.44% 89.19 94.47);
-}
-
 
 header {
     width: 100%;
@@ -26,6 +22,51 @@ header {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+h1, h2, h3 {
+    color: #ffffff;
+    font-family: "Playfair Display", Georgia, serif;
+    margin-bottom: 12px;
+    
+}
+
+p {
+    color: lch(89.44% 89.19 94.47);
+    font-family: Georgia serif;
+    font-size: 23px;
+    line-height: 1.6;
+}
+
+#about p, #contact p {
+    text-decoration: underline;
+}
+
+section, img {
+align-items: center;
+text-align: center;
+justify-self: center;
+padding: auto;
+flex-direction: column;
+}
+
+img{ 
+    border-radius: 5rem;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+     gap: 10px;
+    position: absolute;
+    left: 20px;
+    top: 5%;
+    font-size: 20px;
+}
+
+nav a{
+    color: white;
+}
+
 #home{
     position: relative;
 }
@@ -36,62 +77,39 @@ header {
     transform: translate(-50%, -50%);
     font-size: 50px;
 }
-nav{
-    display: flex;
-    flex-direction: column;
-     gap: 10px;
-    position: absolute;
-    left: 20px;
-    top: 5%;
-    font-size: 20px;
-}
-nav a{
-    color: white;
-}
-h1, h2, h3, nav a {
-    font-family: "Playfair Display", Georgia, serif;
-}
-Restaurant menu styling
-#about p,
-#menu p,
-#contact p,
-#reviews p {
-font-family: Georgia serif;
-font-size: 23px;
-line-height: 1.6;
-}
 
-#menu h2,
-#menu h3,
-#about h2,
-#contact h2,
-#reservation h2,
-#reviews h2 {
-font-family: "Playfair Display", Georgia, serif;
-margin-bottom: 12px;
-}
-#menu img {
-width: 400px;
-height: 280px;
-object-fit: cover;
-border-radius: 10px;
-display: block;
 
-}
+
+/* #about, img {
+align-items: center;
+text-align: center;
+justify-self: center;
+padding: auto;
+flex-direction: column;
+} */
+
+/* #contact {
+align-items: center;
+text-align: center;
+justify-self: center;
+padding: auto;
+flex-direction: column;
+}*/
+
+/* #reservation {
+align-items: center;
+text-align: center;
+justify-self: center;
+padding: auto;
+flex-direction: column;
+} */
+
+
 section#about > p {
 font-size: 23px;
     line-height: 1.7;
-
-}
-
-
-
-#about p {
-    text-decoration: underline;
-}
-#contact p {
-    text-decoration: underline;
 }
 
 #reservation label {
 color: #FFF3D6
+}

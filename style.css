@@ -13,8 +13,9 @@ h1, h2, h3 {
     
 }
 p {
-    color: #020202;
+    color: lch(89.44% 89.19 94.47);
 }
+
 
 header {
     width: 100%;
@@ -38,14 +39,59 @@ header {
 nav{
     display: flex;
     flex-direction: column;
+     gap: 10px;
     position: absolute;
     left: 20px;
     top: 5%;
-    font-size: 50px;
+    font-size: 20px;
 }
 nav a{
     color: white;
 }
-h1, h2, h3, nav a{
-    font-family: Playfair Display, serif;
+h1, h2, h3, nav a {
+    font-family: "Playfair Display", Georgia, serif;
 }
+Restaurant menu styling
+#about p,
+#menu p,
+#contact p,
+#reviews p {
+font-family: Georgia serif;
+font-size: 23px;
+line-height: 1.6;
+}
+
+#menu h2,
+#menu h3,
+#about h2,
+#contact h2,
+#reservation h2,
+#reviews h2 {
+font-family: "Playfair Display", Georgia, serif;
+margin-bottom: 12px;
+}
+#menu img {
+width: 400px;
+height: 280px;
+object-fit: cover;
+border-radius: 10px;
+display: block;
+
+}
+section#about > p {
+font-size: 23px;
+    line-height: 1.7;
+
+}
+
+
+
+#about p {
+    text-decoration: underline;
+}
+#contact p {
+    text-decoration: underline;
+}
+
+#reservation label {
+color: #FFF3D6
